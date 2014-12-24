@@ -1,0 +1,326 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{#1}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{{#1}}\else\fi
+
+\bibitem{Louisell}
+\selectlanguageifdefined{russian}
+\BibEmph{Люиселл,~У.} Связанные и
+  параметрические колебания в электронике~/
+  У.~Люиселл. "---
+\newblock Москва~: Изд-во иностранной
+  литературы, 1963. "---
+\newblock 350~{\cyr\cyrs.}
+
+\bibitem{Vainshtain}
+\selectlanguageifdefined{russian}
+\BibEmph{Вайнштейн,~Л.~А.} Лекции по
+  сверхвысокочастотной электронике~/
+  Л.~А.~Вайнштейн, В.~А.~Солнцев. "---
+\newblock Москва~: Советское радио, 1973. "---
+\newblock 400~{\cyr\cyrs.}
+
+\bibitem{Chramov}
+\selectlanguageifdefined{russian}
+\BibEmph{Трубецков,~Д.~И.} Лекции по
+  сверхвысокочастотной электронике для
+  физиков~: учебное пособие~/ Д.~И.~Трубецков,
+  А.~Е.~Храмов. "---
+\newblock Москва~: Физматлит, 2003. "---
+\newblock \CYRT.~1. "---
+\newblock 496~{\cyr\cyrs.}
+
+\bibitem{UFNLopuchin}
+\selectlanguageifdefined{russian}
+\BibEmph{Лопухин,~В.~М.} Электронно-лучевые
+  параметрические усилители поперечных
+  волн~/ В.~М.~Лопухин, В.~С.~Рошаль~//
+  \BibEmph{Успехи физических наук}. "---
+\newblock 1965. "---
+\newblock \CYRT.~85, {\cyr\textnumero}~2. "---
+\newblock {\cyr\CYRS.}~297--334.
+
+\bibitem{UFNVanke}
+\selectlanguageifdefined{russian}
+\BibEmph{Ванке,~В.~А.} Поперечные волны
+  электронного потока в микроволновой
+  электронике~/ В.~А.~Ванке~// \BibEmph{Успехи
+  физических наук}. "---
+\newblock 2005. "---
+\newblock \CYRT. 175, {\cyr\textnumero}~9. "---
+\newblock {\cyr\CYRS.}~957--978.
+
+\bibitem{GTFKapch}
+\selectlanguageifdefined{russian}
+\BibEmph{Капчинский,~М.~И.} Нелинейная стадия
+  развития циклотронной неустойчивости
+  пучка в замедляющей структуре~/
+  М.~И.~Капчинский, Л.~А.~Юдин~// \BibEmph{Журнал
+  технической физики}. "---
+\newblock 1993. "---
+\newblock \CYRT.~63, {\cyr\textnumero}~11. "---
+\newblock {\cyr\CYRS.}~121--134.
+
+\bibitem{AlgoritmO(N)}
+\selectlanguageifdefined{english}
+\BibEmph{Dehnen,~W.} A hierarchical $o(n)$ force calculation algorithm~/
+  W.~Dehnen~// \BibEmph{Journal of Computational Physic}. "---
+\newblock 2002. "---
+\newblock N. 179. "---
+\newblock P.~27--42.
+
+\bibitem{Roshal}
+\selectlanguageifdefined{russian}
+\BibEmph{Рошаль,~А.~С.} Моделирование заряженных
+  пучков~/ А.~С.~Рошаль. "---
+\newblock Москва~: Атомиздат, 1979. "---
+\newblock 224~{\cyr\cyrs.}
+
+\bibitem{Grigoriev}
+\selectlanguageifdefined{russian}
+\BibEmph{Григорьев,~А.~С.} Численное
+  моделирование методами частиц-в-ячейках~/
+  А.~С.~Григорьев, В.~А.~Вшивков, М.~П.~Федорук.
+  "---
+\newblock Новосибирск~: Издательство СО РАН, 2004.
+  "---
+\newblock 360~{\cyr\cyrs.}
+
+\bibitem{PIC}
+\selectlanguageifdefined{english}
+\BibEmph{Lapenta,~G.} Particle In Cell Method~[Electronic resource]~/
+  G.~Lapenta. \BibUrl{ ~--- Mode of access~:
+  \url{https://perswww.kuleuven.be/~u0052182/weather/pic.pdf}.~--- Date of
+  access~: 22.12.2014.}
+
+\bibitem{IFR_PIC}
+\selectlanguageifdefined{english}
+The theory and simulation of relativistic electron beam transport in the
+  ion-focused regime~/ S.~B.~Swanekamp, J.~P.~Holloway, T.~Kammash,
+  R.~M.~Gilgenbach~// \BibEmph{Phys. fluids}. "---
+\newblock 1992. "---
+\newblock Vol.~4, N.~5. "---
+\newblock P.~1332--1348.
+
+\bibitem{IZVPND}
+\selectlanguageifdefined{russian}
+\BibEmph{Капчинский,~М.~И.} Исследование
+  колебаний в электронном потоке с
+  виртуальным катодом в виркаторе и
+  виртоде~/ М.~И.~Капчинский, Л.~А.~Юдин~//
+  \BibEmph{Известия вузов <<ПНД>>}. "---
+\newblock 1999. "---
+\newblock \CYRT.~7, {\cyr\textnumero}~3. "---
+\newblock {\cyr\CYRS.}~33--51.
+
+\bibitem{VGTMorozov}
+\selectlanguageifdefined{russian}
+\BibEmph{Морозов,~М.~Ю.} Влияние внешнего
+  магнитного поля на величину критического
+  тока электронного пучка, при котором
+  формируется виртуальный катод~/
+  М.~Ю.~Морозов, А.~Е.~Храмов~// \BibEmph{Физика
+  плазмы}. "---
+\newblock 2007. "---
+\newblock \CYRT.~33, {\cyr\textnumero}~7. "---
+\newblock {\cyr\CYRS.}~610--619.
+
+\bibitem{GTFVshivkov}
+\selectlanguageifdefined{russian}
+\BibEmph{Вшивков,~В.~А.} О методе частиц для
+  решения уравнения Власова~/ В.~А.~Вшивков,
+  В.~Н.~Снытников~// \BibEmph{Журнал
+  вычислительной математики и
+  теоретической физики}. "---
+\newblock 1998. "---
+\newblock \CYRT.~38, {\cyr\textnumero}~11. "---
+\newblock {\cyr\CYRS.}~1877--1883.
+
+\bibitem{Hokni}
+\selectlanguageifdefined{russian}
+\BibEmph{Хокни,~Р.} Численное моделирование
+  методом частиц~/ Р.~Хокни, Дж.~Иствуд. "---
+\newblock Москва~: Мир, 1987. "---
+\newblock 640~{\cyr\cyrs.}
+
+\bibitem{Polevin}
+\selectlanguageifdefined{russian}
+\BibEmph{Полевин,~С.~Д.} Релятивистская
+  высокочастотная электроника~: учебное
+  пособие~/ С.~Д.~Полевин. "---
+\newblock Томск~: Изд-во томского
+  политехнического университета, 2008. "---
+\newblock 104~{\cyr\cyrs.}
+
+\bibitem{Cvetkov}
+\selectlanguageifdefined{russian}
+\BibEmph{Цветков,~И.~В.} Применение численных
+  методов для моделирования процессов в
+  плазме~: учебное пособие~/ И.~В.~Цветков. "---
+\newblock Москва~: Мифи, 2007. "---
+\newblock 84~{\cyr\cyrs.}
+
+\bibitem{VSTUShein1}
+\selectlanguageifdefined{russian}
+\BibEmph{Шеин,~А.~Г.} Влияние периодически
+  неоднородного электростатического поля
+  на группировку электронного потока в
+  скрещенных полях~/ А.~Г.~Шеин,
+  С.~С.~Буланцев~// \BibEmph{Изв. ВолгГТУ}. "---
+\newblock 2011. "---
+\newblock \CYRT.~5, {\cyr\textnumero}~6. "---
+\newblock {\cyr\CYRS.}~26--30.
+
+\bibitem{VSTUShein4}
+\selectlanguageifdefined{russian}
+\BibEmph{Шеин,~А.~Г.} Стохастическая модель
+  динамики плоского электронного потока в
+  скрещенных статических электрическом и
+  магнитном полях~/ А.~Г.~Шеин, Е.~А.~Шамов~//
+  \BibEmph{Изв. ВолгГТУ}. "---
+\newblock 2009. "---
+\newblock \CYRT.~3, {\cyr\textnumero}~3. "---
+\newblock {\cyr\CYRS.}~48--53.
+
+\bibitem{VSTUSham}
+\selectlanguageifdefined{russian}
+\BibEmph{Шамов,~Е.~А.} Применение параллельного
+  программирования при моделировании
+  динамики плоского электронного потока в
+  скрещенных статических электрическом и
+  магнитном полях~/ Е.~А.~Шамов~// \BibEmph{Изв.
+  ВолгГТУ}. "---
+\newblock 2011. "---
+\newblock \CYRT.~5, {\cyr\textnumero}~6. "---
+\newblock {\cyr\CYRS.}~41--46.
+
+\bibitem{VSTUShein2}
+\selectlanguageifdefined{russian}
+\BibEmph{Ковтун,~Д.~Г.} Влияние металлических
+  стенок пространства взаимодействия на
+  форму релятивистских электронных
+  потоков, движущихся в скрещенных полях~/
+  Д.~Г.~Ковтун, П.~Д.~Кравченя, А.~Г.~Шеин~//
+  \BibEmph{Изв. ВолгГТУ}. "---
+\newblock 2011. "---
+\newblock \CYRT.~5, {\cyr\textnumero}~6. "---
+\newblock {\cyr\CYRS.}~30--36.
+
+\bibitem{VSTUErm}
+\selectlanguageifdefined{russian}
+\BibEmph{Ермолаев,~А.~В.} Исследование
+  спектральных характеристик
+  релятивистских электронных потоков при
+  помощи моделирования методом крупных
+  частиц~/ А.~В.~Ермолаев, Н.~А.~Исаков,
+  Д.~Г.~Ковтун~// \BibEmph{Изв. ВолгГТУ}. "---
+\newblock 2011. "---
+\newblock \CYRT.~5, {\cyr\textnumero}~6. "---
+\newblock {\cyr\CYRS.}~36--41.
+
+\bibitem{UFNGinzburg}
+\selectlanguageifdefined{russian}
+\BibEmph{Гинзбург,~Н.~С.} Теория переходных
+  процессов в релятивистской ЛОВ~/
+  Н.~С.~Гинзбург, С.~П.~Кузнецов,
+  Т.~Н.~Федосеева~// \BibEmph{Известия высших
+  учебных заведений}. "---
+\newblock 1978. "---
+\newblock \CYRT.~22, {\cyr\textnumero}~7. "---
+\newblock {\cyr\CYRS.}~1037--1052.
+
+\bibitem{GTFKorovin}
+\selectlanguageifdefined{russian}
+\BibEmph{Коровин,~С.~Д.} Релятивистская лампа
+  обратной волны с модулирующим
+  резонансным рефлектором~/ С.~Д.~Коровин,
+  В.~В.~Ростов, Е.~М.~Тотьменинов~// \BibEmph{Письма
+  в ЖТФ}. "---
+\newblock 2005. "---
+\newblock \CYRT.~31, {\cyr\textnumero}~10. "---
+\newblock {\cyr\CYRS.}~17--23.
+
+\bibitem{GTFRostov}
+\selectlanguageifdefined{russian}
+\BibEmph{Ростов,~В.~В.} Мощные релятивистские
+  СВЧ-генераторы на основе лампы обратной
+  волны с модулирующим резонансным
+  рефлектором~/ В.~В.~Ростов,
+  Е.~М.~Тотьменинов, М.~И.~Яландин~//
+  \BibEmph{Журнал технической физики}. "---
+\newblock 2008. "---
+\newblock \CYRT.~78, {\cyr\textnumero}~11. "---
+\newblock {\cyr\CYRS.}~85--92.
+
+\bibitem{GTFKlimov}
+\selectlanguageifdefined{russian}
+Релятивистский черенковский СВЧ-генератор
+  без внешнего магнитного поля~/ А.~И.~Климов,
+  С.~Д.~Коровин, Е.~М.~Ростов,
+  C.~C.~Тотьменинова~// \BibEmph{Письма в ЖТФ}. "---
+\newblock 2006. "---
+\newblock \CYRT.~32, {\cyr\textnumero}~3. "---
+\newblock {\cyr\CYRS.}~55--61.
+
+\bibitem{VGTNifanov}
+\selectlanguageifdefined{russian}
+\BibEmph{Нифанов,~А.~С.} Взаимодействие
+  электронного потока и электромагнитного
+  поля в релятивистских черенковских
+  генераторах~/ А.~С.~Нифанов, А.~И.~Слепков~//
+  \BibEmph{Фундаментальная и прикладная
+  математика}. "---
+\newblock 2009. "---
+\newblock \CYRT.~15, {\cyr\textnumero}~6. "---
+\newblock {\cyr\CYRS.}~119--139.
+
+\bibitem{UFNGuliaev}
+\selectlanguageifdefined{russian}
+\BibEmph{Гуляев,~Ю.~В.} Усилители на основе
+  эффекта Вавилова-Черенкова с
+  нерегулярными электродинамическими
+  структурами~/ Ю.~В.~Гуляев, В.~Ф.~Кравченко,
+  А.~А.~Кураев~// \BibEmph{Успехи физических наук}.
+  "---
+\newblock 2004. "---
+\newblock \CYRT. 174, {\cyr\textnumero}~6. "---
+\newblock {\cyr\CYRS.}~639--655.
+
+\bibitem{Schachter}
+\selectlanguageifdefined{english}
+\BibEmph{Schachter,~L.} Beam-wave interaction in periodic and quasi-periodic
+  structures~/ L.~Schachter. "---
+\newblock Germany~: Springer, 1996. "---
+\newblock 356~p.
+
+\bibitem{Barsukov}
+\selectlanguageifdefined{russian}
+\BibEmph{Барсуков,~С.~Н.} Теория
+  электромагнитного поля. Объёмные
+  резонаторы и замедляющие структуры~:
+  учебное пособие~/ С.~Н.~Барсуков. "---
+\newblock Харьков~: ХАИ, 2008. "---
+\newblock 50~{\cyr\cyrs.}
+
+\bibitem{Silin}
+\selectlanguageifdefined{russian}
+\BibEmph{Силин,~Р.~А.} Замедляющие системы~/
+  Р.~А.~Силин, В.~П.~Сазонов. "---
+\newblock Москва~: Советское радио, 1966. "---
+\newblock 316~{\cyr\cyrs.}
+
+\bibitem{VSTUShein3}
+\selectlanguageifdefined{russian}
+\BibEmph{Шеин,~А.~Г.} Вычисление распределения
+  электростатического поля в плоской
+  гребенчатой системе~/ А.~Г.~Шеин,
+  С.~С.~Буланцев~// \BibEmph{Изв. ВолгГТУ}. "---
+\newblock 2009. "---
+\newblock \CYRT.~3, {\cyr\textnumero}~3. "---
+\newblock {\cyr\CYRS.}~44--48.
+
+\end{thebibliography}
