@@ -103,7 +103,7 @@
 	& \vec{B}^{(e)} = \vec{B}^{(e)}(x, z) e^{i \omega t}
 \end{align*}
 
-Так как система однородна в направлении оси $y$, зависимости от $y$ нет. В силу периодичности системы решение в пространстве взаимодействия нужно искать в форме ряда Фурье:
+Так как система однородна в направлении оси $y$, зависимости от $y$ нет. Решение на первом периоде системы:
 \begin{align*}
 & \vec{E}^{(e)}(x, z) = \sum_{n = -\infty}^{\infty} \vec{E}^{(e)}_n(x) e^{2\pi n z i /l} \\
 & \vec{B}^{(e)}(x, z) = \sum_{n = -\infty}^{\infty} \vec{B}^{(e)}_n(x) e^{2\pi n z i /l}
@@ -126,6 +126,141 @@
 & \Dfs{B^{(e)}_{nx}}{x} - \left(\beta_n^2 - \frac{\omega^2}{c^2}\right) B^{(e)}_{nx}  =  0 \\
 & \Dfs{E^{(e)}_{nx}}{x} - \left(\beta_n^2 - \frac{\omega^2}{c^2}\right) E^{(e)}_{nx}  =  0
 \end{align*} 
-
+Отсюда следует, если ввести обозначение $\gamma_n^2 = \beta_n^2 - {\omega^2}/{c^2}$:
+\begin{equation*}
+	\begin{aligned}
+		& B_{nx}^{(e)} = a_{11}^{(e)} \sinh \gamma_n x + a_{12}^{(e)} \cosh \gamma_n x \\ 
+		& E_{nx}^{(e)} = a_{21}^{(e)} \sinh \gamma_n x + a_{22}^{(e)} \cosh \gamma_n x
+	\end{aligned}
+\end{equation*}
+Учёт граничных условий:
+\begin{align*}
+	& E_{ny}\Bigg|_{x = 0} = 0 \\
+	& E_{nz}\Bigg|_{x = 0} = 0
+\end{align*}
+Они сводятся к условиям:
+\begin{align*}
+& B_{nx}\Bigg|_{x = 0} = 0 \\
+& \Dff{E_{nx}}{x}\Bigg|_{x = 0} = 0
+\end{align*}
+Откуда:
+\begin{equation*}
+	\begin{aligned}
+		& B_{nx}^{(e)} = a_{11}^{(e)} \sinh \gamma_n x = C_n \sinh \gamma_n x\\ 
+		& E_{nx}^{(e)} = a_{22}^{(e)} \cosh \gamma_n x = D_n \cosh \gamma_n x
+	\end{aligned}
+\end{equation*}
+Выпишем полностью поля:
+\begin{align*}
+	& E_{x}^{e} = \sum_{n = -\infty}^{\infty} D_n \cosh (\gamma_n x) e^{i\beta_n z} \\
+	& E_{y}^{e} = \sum_{n = -\infty}^{\infty} \frac{\omega}{\beta_n} C_n \sinh (\gamma_n x) e^{i\beta_n z} \\
+	& E_{z}^{e} = \sum_{n = -\infty}^{\infty} i \frac{\gamma_n}{\beta_n} D_n \sinh (\gamma_n x) e^{i\beta_n z} \\
+	& B_{x}^{e} = \sum_{n = -\infty}^{\infty} C_n \sinh (\gamma_n x) e^{i\beta_n z} \\
+	& B_{y}^{e} = \sum_{n = -\infty}^{\infty} - \frac{\omega}{c^2\beta_n} D_n \cosh (\gamma_n x) e^{i\beta_n z} \\
+	& B_{z}^{e} = \sum_{n = -\infty}^{\infty} i\frac{\gamma_n}{\beta_n} C_n \cosh (\gamma_n x) e^{i\beta_n z}
+\end{align*}
+Поле внутри паза определяется уравнениями такого же вида, но значения продольного волнового числа $\beta_n' = 2\pi n/l'$. Оно может быть двух типов. В первом случае $\gamma_n'^2 = \beta_n'^2 - {\omega^2}/{c^2} > 0$. Граничные условия:
+\begin{equation*}
+	E_{x}^{(r)} \Bigg|_{z = 0} = 0 \quad E_{y}^{(r)} \Bigg|_{z = 0} = 0 \quad E_{y}^{(r)} \Bigg|_{x = d + h} = 0 \quad E_{z}^{(r)} \Bigg|_{x = d + h} = 0
+\end{equation*}
+Они приводят к тому, что поля имеют вид
+\begin{align*}
+& E_{x}^{(r)} = 
+\sum_{n = 1}^{\infty} D_n' \cosh (\gamma_n' (x - d - h)) \sin(\beta_n' z) = 
+\sum_{n = -\infty}^{\infty} \frac{1}{2i} D_n' \cosh (\gamma_n' (x - d - h)) e^{i\beta_n' z} \\
+& \qquad \qquad \Rightarrow D_n' = - D_{-n}' \\
+& E_{y}^{(r)} = 
+\sum_{n = 1}^{\infty} \frac{\omega}{\beta_n'} C_n' \sinh (\gamma_n' (x - d - h)) \sin(\beta_n' z) = 
+\sum_{n = -\infty}^{\infty} \frac{1}{2i} C_n' \frac{\omega}{\beta_n'} \sinh (\gamma_n' (x - d - h)) e^{i\beta_n' z} \\
+& \qquad \qquad\Rightarrow C_n' = - C_{-n}' \\
+\end{align*}
+\begin{align*}
+& E_{z}^{(r)} = 
+\sum_{n = -\infty}^{\infty} i \frac{\gamma_n'}{\beta_n'} \frac{1}{2i} D_n' \sinh (\gamma_n' (x - d - h)) e^{i\beta_n' z} = 
+\sum_{n = 1}^{\infty} \frac{\gamma_n'}{\beta_n'} D_n' \sinh (\gamma_n' (x - d - h)) \cos(\beta_n' z) \\
+& B_{x}^{(r)} = 
+\sum_{n = -\infty}^{\infty} \frac{1}{2i} C_n' \sinh (\gamma_n' (x - d - h)) e^{i\beta_n' z} = 
+\sum_{n = 1}^{\infty} - i C_n' \sinh (\gamma_n' (x - d - h)) \cos(\beta_n' z) \\
+& B_{y}^{(r)} = 
+\sum_{n = -\infty}^{\infty} - \frac{\omega}{c^2\beta_n'} \frac{1}{2i} D_n' \cosh (\gamma_n' (x - d - h)) e^{i\beta_n' z} =
+\sum_{n = 1}^{\infty} i \frac{\omega}{c^2\beta_n'} D_n' \cosh (\gamma_n' (x - d - h)) \cos (\beta_n' z) \\
+& B_{z}^{(r)} = 
+\sum_{n = -\infty}^{\infty} i\frac{\gamma_n'}{\beta_n'} \frac{1}{2i} C_n' \cosh (\gamma_n' (x - d - h)) e^{i\beta_n' z} =
+\sum_{n = 1}^{\infty} i\frac{\gamma_n'}{\beta_n'} C_n' \cosh (\gamma_n' (x - d - h)) \sin (\beta_n' z)
+\end{align*}
+При $x = d$ поля непрерывны. Чтобы найти коэффициенты проинтегрируем правую и левую часть по периоду $l$:
+\begin{align*}
+	& \int\limits_{0}^{l} \vec{E}^{e} e^{- i \beta_k z} dz \Bigg|_{x = d} = 
+	\int\limits_{0}^{l} \vec{E}^{r} e^{- i \beta_k z} dz \Bigg|_{x = d} =
+	\int\limits_{0}^{l'} \vec{E}^{r} e^{- i \beta_k z} dz \Bigg|_{x = d}\\
+	& \int\limits_{0}^{l} \vec{B}^{e} e^{- i \beta_k z} dz \Bigg|_{x = d} = 
+	\int\limits_{0}^{l} \vec{B}^{r} e^{- i \beta_k z} dz \Bigg|_{x = d} =
+	\int\limits_{0}^{l'} \vec{B}^{r} e^{- i \beta_k z} dz \Bigg|_{x = d}
+\end{align*}
+Найдём интегралы 
+\begin{align*}
+	& 
+	\int\limits_{0}^{l} e^{i (\beta_n - \beta_k) z} dz = l \delta_{nk} \\
+	& 
+	\int\limits_{0}^{l'} \cos(\beta_n' z) e^{- i \beta_k z} dz =
+	\frac{e^{i (\beta_n' - \beta_k) z}}{2i(\beta_n' - \beta_k)} - \frac{e^{- i (\beta_n' + \beta_k) z}}{2i(\beta_n' + \beta_k)} \Bigg|_{0}^{l'} = \\
+	&\qquad
+	\begin{gathered}
+		=
+		\frac{e^{- i \beta_k z}}{(\beta_n'^2 - \beta_k^2)i} 
+			\left(
+				\beta_n' i \sin (\beta_n' z) + 
+				\beta_k \cos (\beta_n' z)
+			\right) \Bigg|_{0}^{l'} =
+		-\frac{i\beta_k}{\beta_n'^2 - \beta_k^2} \left(e^{i (\beta_n'- \beta_k) l'} - 1 \right) = -i\eta_{nk}	
+	\end{gathered} \\ 
+	& 
+	\int\limits_{0}^{l'} \sin(\beta_n' z) e^{- i \beta_k z} dz =
+	-\frac{e^{i (\beta_n' - \beta_k) z}}{2(\beta_n' - \beta_k)} - \frac{e^{- i (\beta_n' + \beta_k) z}}{2(\beta_n' + \beta_k)} \Bigg|_{0}^{l'} = \\
+	&\qquad
+	\begin{gathered}
+		=
+		- \frac{e^{- i \beta_k z}}{\beta_n'^2 - \beta_k^2} 
+			\left(
+				\beta_n' \cos (\beta_n' z) + 
+				\beta_k i \sin (\beta_n' z)
+			\right) \Bigg|_{0}^{l'} =
+		-\frac{\beta_n'}{\beta_n'^2 - \beta_k^2} \left(e^{i (\beta_n'- \beta_k) l'} - 1 \right) = - \frac{\beta_n'}{\beta_k} \eta_{nk}	
+	\end{gathered}
+\end{align*}
+Тогда получаем две системы. Первая система относительно $C_n$, $C_n'$:
+\begin{align*}
+	& 
+	\frac{\omega}{\beta_k} C_k \sinh (\gamma_k d) l = 
+	\sum_{n = 1}^{\infty} - \frac{\omega}{\beta_k} C_n' \sinh (\gamma_n' h) \eta_{nk} \\
+	&
+	C_k \sinh (\gamma_k d) l =
+	\sum_{n = 1}^{\infty} - C_n' \sinh (\gamma_n' h) \eta_{nk} \\
+	&
+	i\frac{\gamma_k}{\beta_k} C_k \cosh (\gamma_k d) l =
+	\sum_{n = 1}^{\infty} -i\frac{\gamma_n'}{\beta_k} C_n' \cosh (\gamma_n' h) \eta_{nk}
+\end{align*}
+Первое и второе уравнение этой системы совпадают, поэтому она преобразуется к виду:
+\begin{align*}
+&
+C_k \sinh (\gamma_k d) l =
+\sum_{n = 1}^{\infty} - C_n' \sinh (\gamma_n' h) \eta_{nk} \\
+&
+\gamma_k C_k \cosh (\gamma_k d) l =
+\sum_{n = 1}^{\infty} - \gamma_n' C_n' \cosh (\gamma_n' h) \eta_{nk}
+\end{align*}
+Аналогичную систему получим для $D_n'$, $D_n$:
+\begin{align*}
+&
+- \frac{\omega}{c^2\beta_k} D_k \cosh (\gamma_k d) l =
+\sum_{n = 1}^{\infty} i \frac{\omega}{c^2\beta_n'} D_n' \cosh (\gamma_n' h) \eta_{nk} \\
+&
+D_k \cosh (\gamma_k d) l =
+\sum_{n = 1}^{\infty} - i \frac{\beta_n'}{\beta_k} D_n' \cosh (\gamma_n' h) \eta_{nk}\\
+&
+i \frac{\gamma_k}{\beta_k} D_k \sinh (\gamma_k d) l =
+\sum_{n = 1}^{\infty} -\frac{\gamma_n'}{\beta_n'} D_n' \sinh (\gamma_n' h) \eta_{nk}
+\end{align*}
+Рассматривая конечное число элементов разложения, приходим к выводу, что система разрешима.
 
 \end{document}
